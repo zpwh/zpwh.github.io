@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>复习总纲</title>
+    <script type="text/javascript" src="Data/common/jquery-1.2.6.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="Data/common/common.css" />
+    <style type="text/css">
+	    /* 收缩展开效果 */
+	    * {font-family: 微软雅黑;}
+	    .text {line-height: 22px;padding: 0 6px;color: #666;display: none;}
+	    .text a {color: #ff6a00;font-size: 18px;}
+	    .box h1 {padding-left: 10px;height: 28px;line-height: 28px;background: #f1f1f1;font-weight: bold;}
+	    .box {position: relative;border: 1px solid #e7e7e7;}
+	    .Red {background-color: red;}
+	    #LaiLongLuan {position: absolute;right: 0px;bottom: 0px;color: red;font-size: 20px;}
+	    #divjs a {color: red;}
+	    .Green {background-color: #fab4b4;}
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+	    // 收缩展开效果
+	    $(document).ready(function() {
+	        $(".box h1").toggle(function() {
+	            $(this).next(".text").animate({
+	                height: 'toggle',
+	                opacity: 'toggle'
+	            }, "slow");
+	        }, function() {
+	            $(this).next(".text").animate({
+	                height: 'toggle',
+	                opacity: 'toggle'
+	            }, "slow");
+	        });
+	    });
+    </script>
+    <!-- 收缩展开效果 -->
+    <div class="box">
+        <h1>HTML    【点击弹出】</h1>
+        <div class="text">
+            <a href="" target="_blank"></a><br />
+            <a href="" target="_blank"></a>
+        </div>
+    </div>
+    <div class="box">
+        <h1>CSS</h1>
+        <div class="text">
+            <a href="" target="_blank"></a><br />
+            <a href="" target="_blank"></a><br />
+        </div>
+    </div>
+    <div class="box">
+        <h1>JavaScript基础</h1>
+        <div class="text">
+            <a href="" target="_blank"></a>
+        </div>
+    </div>
+    <div class="box">
+        <h1>JavaScript基本功</h1>
+        <div class="text" id="divjs">
+            <a href="" target="_blank"></a><br />
+        </div>
+    </div>
+    <div class="box">
+        <h1>JavaScript进阶</h1>
+        <div class="text">
+            <a href="" target="_blank"></a>
+        </div>
+    </div>
+    <div class="box">
+        <h1>jQuery基础</h1>
+        <div class="text">
+            <a href="" target="_blank"></a>
+        </div>
+    </div>
+    <div class="box">
+        <h1>HTML5和CSS3与服务器、Ajax</h1>
+        <div class="text">
+            <a href="" target="_blank"></a>
+        </div>
+    </div>
+    <div class="box">
+        <h1>面向对象高级编程</h1>
+        <div class="text">
+            <a href="" target="_blank"></a>
+        </div>
+    </div>
+    <div class="box">
+        <h1>面向对象框架设计</h1>
+        <div class="text">
+            <a href="" target="_blank"></a>
+        </div>
+    </div>
+    <div class="box">
+        <h1>Canvas</h1>
+        <div class="text">
+            <a href="" target="_blank"></a>
+            <br />
+        </div>
+    </div>
+    <div class="box">
+        <h1>NodeJs</h1>
+        <div class="text">
+            <a href="" target="_blank"></a>
+        </div>
+    </div>
+    <div class="box">
+        <h1>AngularJS</h1>
+        <div class="text">
+            <a href="" target="_blank"></a>
+            <br />
+        </div>
+    </div>
+    <br />
+    <div id="LaiLongLuan">
+    </div>
+</body>
+</html>
